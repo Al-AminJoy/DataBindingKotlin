@@ -15,14 +15,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater);
         setContentView(binding.root);
-        myViewModel = ViewModelProvider(this).get(MyViewModel::class.java);
+
+       /* myViewModel = ViewModelProvider(this).get(MyViewModel::class.java);
         binding.viewModel = myViewModel;
-        binding.lifecycleOwner = this;
+        binding.lifecycleOwner = this;*/
 
-       /* val myUser = User("Al-Amin","Joy",25,true);
-        binding.user = myUser*/
+        val myUser = User("Al-Amin","Joy",25,true);
+        binding.user = myUser
 
-        binding.editText.addTextChangedListener(object : TextWatcher{
+     /*   binding.editText.addTextChangedListener(object : TextWatcher{
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
 
             }
@@ -35,7 +36,9 @@ class MainActivity : AppCompatActivity() {
 
             }
 
-        })
+        })*/
+
+
 
 
     }
