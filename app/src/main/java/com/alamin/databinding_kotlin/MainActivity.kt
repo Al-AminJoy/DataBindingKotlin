@@ -20,7 +20,11 @@ class MainActivity : AppCompatActivity() {
         binding.viewModel = myViewModel;
         binding.lifecycleOwner = this;*/
 
-        val myUser = User("Al-Amin","Joy",25,true);
+        val myUser = User("Al-Amin",
+            "Joy",
+            25,
+            true,
+            "https://i.postimg.cc/nr0fMmS3/Logo.png");
         binding.user = myUser
 
      /*   binding.editText.addTextChangedListener(object : TextWatcher{
